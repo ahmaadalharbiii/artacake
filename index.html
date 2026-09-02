@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أرتا كيك | ARTA CAKE — كيك ومناسبات تبوك</title>
+
+  <!-- ضع كود بكسل تيك توك هنا -->
+
+  <!-- ضع وسم جوجل (gtag) هنا -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-cream: #FAF7F2;
+      --bg-card: #FFFFFF;
+      --bg-subtle: #F5EFE6;
+      --primary-berry: #701A39;
+      --primary-berry-hover: #5A132C;
+      --accent-rose: #C87D94;
+      --accent-soft: #F9ECEF;
+      --accent-gold: #B88E56;
+      --text-main: #2C1820;
+      --text-muted: #6B5B61;
+      --text-light: #8E7C83;
+      --border-color: #EFE6DC;
+      --border-card: #EADBCE;
+      --wa-green: #25D366;
+      --wa-green-hover: #20BA5A;
+      --wa-dark: #128C7E;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      --shadow-sm: 0 2px 8px rgba(112, 26, 57, 0.04);
+      --shadow-md: 0 4px 16px rgba(112, 26, 57, 0.07);
+      --shadow-wa: 0 4px 14px rgba(37, 211, 102, 0.35);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      direction: rtl;
+      text-align: right;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page-wrapper {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 20px 16px 110px 16px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* 1. Header */
+    .header {
+      text-align: center;
+      padding: 16px 12px 6px 12px;
+    }
+
+    .logo-container {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .shop-name {
+      font-size: 2.1rem;
+      font-weight: 900;
+      color: var(--primary-berry);
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+    }
+
+    .shop-name-latin {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: var(--accent-rose);
+      margin-top: 2px;
+      text-transform: uppercase;
+      font-family: 'Tajawal', sans-serif;
+    }
+
+    .tagline-badge {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: var(--accent-soft);
+      border: 1px solid #F0D5DD;
+      border-radius: var(--radius-full);
+      color: var(--primary-berry);
+      font-size: 0.95rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    /* 2. Quick Info Bar */
+    .quick-info-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      background-color: var(--bg-card);
+      padding: 12px 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .info-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--bg-cream);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-card);
+      white-space: nowrap;
+    }
+
+    .info-chip-icon {
+      font-size: 0.9rem;
+    }
+
+    /* 3. WhatsApp Buttons & CTAs */
+    .wa-main-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px 20px;
+      background-color: var(--wa-green);
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      font-size: 1.2rem;
+      font-weight: 800;
+      box-shadow: var(--shadow-wa);
+      transition: background-color 0.2s ease, transform 0.15s ease;
+      cursor: pointer;
+    }
+
+    .wa-main-btn:hover, .wa-main-btn:active {
+      background-color: var(--wa-green-hover);
+      transform: translateY(-1px);
+    }
+
+    .wa-icon {
+      width: 26px;
+      height: 26px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    /* 4. Menu Section */
+    .menu-section {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .section-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--primary-berry);
+    }
+
+    .section-divider {
+      flex: 1;
+      height: 1px;
+      background: var(--border-card);
+    }
+
+    .menu-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      padding: 16px 16px 12px 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .menu-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      margin-bottom: 6px;
+      border-bottom: 2px solid var(--bg-cream);
+    }
+
+    .menu-card-title {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--primary-berry);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .menu-card-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: var(--radius-full);
+      background: var(--bg-subtle);
+      color: var(--text-muted);
+    }
+
+    .menu-items-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+      padding-bottom: 4px;
+    }
+
+    .menu-item-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .menu-item-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .menu-item-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .menu-item-price-box {
+      display: flex;
+      align-items: baseline;
+      gap: 3px;
+      background: var(--bg-cream);
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-card);
+      flex-shrink: 0;
+    }
+
+    .menu-item-price-val {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--primary-berry);
+    }
+
+    .menu-item-price-unit {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    /* Flowers & Gifts special card */
+    .flower-action-box {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .wa-flower-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background-color: var(--accent-rose);
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      font-size: 0.9rem;
+      font-weight: 700;
+      transition: background-color 0.2s ease;
+      cursor: pointer;
+    }
+
+    .wa-flower-btn:hover, .wa-flower-btn:active {
+      background-color: var(--primary-berry);
+    }
+
+    .wa-flower-btn .wa-icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    .menu-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+      background: var(--bg-card);
+      padding: 8px 12px;
+      border-radius: var(--radius-md);
+      border: 1px dashed var(--border-card);
+      margin-top: -4px;
+    }
+
+    /* 5. Important Before Ordering */
+    .notice-card {
+      background-color: #FCF9F2;
+      border: 1px solid #EADBBA;
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .notice-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .notice-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #784C0F;
+    }
+
+    .notice-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .notice-item {
+      position: relative;
+      padding-right: 18px;
+      font-size: 0.88rem;
+      color: #4A3A26;
+      line-height: 1.5;
+    }
+
+    .notice-item::before {
+      content: "•";
+      position: absolute;
+      right: 4px;
+      top: -1px;
+      color: #B57D2C;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    /* 6. Location Section */
+    .location-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .location-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .location-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary-berry);
+    }
+
+    .location-address {
+      font-size: 0.92rem;
+      color: var(--text-main);
+      font-weight: 500;
+      line-height: 1.5;
+      background: var(--bg-cream);
+      padding: 10px 12px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .maps-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 16px;
+      background-color: #FFFFFF;
+      color: var(--primary-berry);
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--primary-berry);
+      font-size: 0.92rem;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .maps-btn:hover, .maps-btn:active {
+      background-color: var(--accent-soft);
+    }
+
+    .maps-icon {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* 7. Footer */
+    .footer {
+      text-align: center;
+      padding: 12px 0 6px 0;
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    /* 8. Sticky Bottom Bar */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(250, 247, 242, 0.96);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border-card);
+      padding: 10px 16px;
+      padding-bottom: max(10px, env(safe-area-inset-bottom));
+      z-index: 999;
+      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .sticky-bar-inner {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .wa-sticky-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 13px 20px;
+      background-color: var(--wa-green);
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      font-size: 1.1rem;
+      font-weight: 800;
+      box-shadow: var(--shadow-wa);
+      transition: background-color 0.2s ease;
+      cursor: pointer;
+    }
+
+    .wa-sticky-btn:hover, .wa-sticky-btn:active {
+      background-color: var(--wa-green-hover);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- 1. ترويسة -->
+    <header class="header">
+      <div class="logo-container">
+        <h1 class="shop-name">أرتا كيك</h1>
+        <span class="shop-name-latin">ARTA CAKE</span>
+      </div>
+      <div>
+        <p class="tagline-badge">مناسبتك كاملة من مكان واحد — كيك وورد وضيافة، بمكوّنات طبيعية</p>
+      </div>
+    </header>
+
+    <!-- 2. سطر معلومات سريع -->
+    <section class="quick-info-bar" aria-label="معلومات سريعة">
+      <div class="info-chip">
+        <span class="info-chip-icon">📍</span>
+        <span>تبوك — حي العليا</span>
+      </div>
+      <div class="info-chip">
+        <span class="info-chip-icon">🛍️</span>
+        <span>استلام من الفرع أو توصيل</span>
+      </div>
+      <div class="info-chip">
+        <span class="info-chip-icon">⏱️</span>
+        <span>التنفيذ خلال 2–7 أيام</span>
+      </div>
+      <div class="info-chip">
+        <span class="info-chip-icon">🕐</span>
+        <span>نداوم يومياً ٣م – ١١م</span>
+      </div>
+      <div class="info-chip">
+        <span class="info-chip-icon">💬</span>
+        <span>الرد على الطلبات ٤م – ١٠م</span>
+      </div>
+    </section>
+
+    <!-- 3. زر واتساب رئيسي كبير -->
+    <div>
+      <a href="https://wa.me/966593600306?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%AA%D8%A7%20%D9%83%D9%8A%D9%83%20%F0%9F%8C%B8%20%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%3A%0A%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%3A%0A%D8%A7%D9%84%D9%86%D9%83%D9%87%D8%A9%3A%0A%D8%A7%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85%3A%0A%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A8%D8%A9%3A%0A%D8%A7%D9%84%D9%8A%D9%88%D9%85%20%D9%88%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%20%D9%88%D8%A7%D9%84%D9%88%D9%82%D8%AA%3A%0A%D8%A7%D8%B3%D8%AA%D9%84%D8%A7%D9%85%20%D8%A3%D9%88%20%D8%AA%D9%88%D8%B5%D9%8A%D9%84%3A%0A%D8%A7%D9%84%D8%A7%D8%B3%D9%85%3A%0A%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D8%AC%D9%88%D8%A7%D9%84%3A" class="wa-main-btn track-wa-click" target="_blank" rel="noopener noreferrer">
+        <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.05 7.42C8.86 7.42 8.56 7.49 8.3 7.78C8.04 8.07 7.31 8.76 7.31 10.17C7.31 11.58 8.34 12.94 8.48 13.13C8.63 13.32 10.45 16.12 13.24 17.32C13.9 17.61 14.42 17.78 14.82 17.91C15.48 18.12 16.09 18.09 16.56 18.02C17.09 17.94 18.18 17.36 18.41 16.71C18.64 16.07 18.64 15.52 18.57 15.4C18.5 15.29 18.31 15.22 18.03 15.08C17.74 14.94 16.34 14.25 16.08 14.15C15.82 14.06 15.63 14.01 15.44 14.3C15.25 14.59 14.71 15.22 14.55 15.4C14.39 15.59 14.23 15.61 13.94 15.47C13.66 15.33 12.74 15.03 11.64 14.05C10.79 13.29 10.21 12.35 10.05 12.07C9.88 11.78 10.03 11.63 10.18 11.49C10.31 11.36 10.46 11.16 10.61 10.99C10.75 10.82 10.8 10.69 10.89 10.51C10.99 10.32 10.94 10.16 10.87 10.02C10.8 9.88 10.23 8.48 10 7.92C9.77 7.37 9.54 7.45 9.37 7.44C9.21 7.43 9.05 7.42 9.05 7.42Z"/>
+        </svg>
+        <span>اطلبي عبر واتساب</span>
+      </a>
+    </div>
+
+    <!-- 4. قسم المنيو -->
+    <main class="menu-section">
+      <div class="section-title-wrap">
+        <h2 class="section-title">قائمة الأسعار</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- أ. كيك المناسبات — ارتفاع منخفض -->
+      <article class="menu-card">
+        <div class="menu-card-header">
+          <h3 class="menu-card-title">🎂 كيك المناسبات — ارتفاع منخفض</h3>
+        </div>
+        <ul class="menu-items-list">
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">4 إنش</span>
+              <span class="menu-item-desc">شخصان</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">49</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">5 إنش</span>
+              <span class="menu-item-desc">4 أشخاص</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">65</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">6 إنش</span>
+              <span class="menu-item-desc">8 أشخاص</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">89</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">8 إنش</span>
+              <span class="menu-item-desc">10 أشخاص</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">130</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">دورين 6+4 إنش</span>
+              <span class="menu-item-desc">10 أشخاص</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">175</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">دورين 8+6 إنش</span>
+              <span class="menu-item-desc">20 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">250</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ب. كيك المناسبات — ارتفاع عالي -->
+      <article class="menu-card">
+        <div class="menu-card-header">
+          <h3 class="menu-card-title">🎂 كيك المناسبات — ارتفاع عالي</h3>
+        </div>
+        <ul class="menu-items-list">
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">6 إنش</span>
+              <span class="menu-item-desc">15 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">250</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">7 إنش</span>
+              <span class="menu-item-desc">20 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">300</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">8 إنش</span>
+              <span class="menu-item-desc">25 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">380</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">10 إنش</span>
+              <span class="menu-item-desc">30 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">450</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">دورين 7+5 إنش</span>
+              <span class="menu-item-desc">30 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">480</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">دورين 8+6 إنش</span>
+              <span class="menu-item-desc">40 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">550</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">دورين 10+8 إنش</span>
+              <span class="menu-item-desc">50 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">650</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">ثلاثة أدوار 10+8+6 إنش</span>
+              <span class="menu-item-desc">80 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">1300</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ج. كيك مستطيل — ارتفاع 6 سم -->
+      <article class="menu-card">
+        <div class="menu-card-header">
+          <h3 class="menu-card-title">🍰 كيك مستطيل — ارتفاع 6 سم</h3>
+        </div>
+        <ul class="menu-items-list">
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">مقاس 30×40</span>
+              <span class="menu-item-desc">25 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">250</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">مقاس 60×40</span>
+              <span class="menu-item-desc">45 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">480</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- د. النكهات -->
+      <article class="menu-card">
+        <div class="menu-card-header">
+          <h3 class="menu-card-title">🍦 النكهات</h3>
+        </div>
+        <ul class="menu-items-list">
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">فانيليا بحشوة توت أو فراولة وكريمة الفانيليا</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">ريد فيلفت وكريمة الشوكولاتة البلجيكية</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">مكس فانيليا وشوكولاتة بحشوة التوت والنوتيلا</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">شوكولاتة وكريمة النوتيلا</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- هـ. متوفر يومياً لجمعاتكم -->
+      <article class="menu-card">
+        <div class="menu-card-header">
+          <div>
+            <h3 class="menu-card-title">⭐ متوفر يومياً لجمعاتكم</h3>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 500; display: block; margin-top: 2px;">جاهزة للاستلام في نفس اليوم</span>
+          </div>
+        </div>
+        <ul class="menu-items-list">
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">كيكة الجزر والبيكان</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">149</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">ميني كيك عسل</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">97</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">كيكة التمر والبيكان</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">135</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">كيكة الريد فيلفت</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">135</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">كيكة الجاناش</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">135</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">ترافيل فانيلا وتوت</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">135</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">ترافيل ليمون</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">135</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">تشيز كيك مدريد</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">119</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">سويسرول العملاق</span>
+              <span class="menu-item-desc">يكفي 12 شخصاً</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">135</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- و. أهرام المناسبات -->
+      <article class="menu-card">
+        <div class="menu-card-header">
+          <h3 class="menu-card-title">🏛️ أهرام المناسبات</h3>
+        </div>
+        <ul class="menu-items-list">
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">هرم مادلين</span>
+              <span class="menu-item-desc">110 حبات</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">230</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">هرم ماكرون</span>
+              <span class="menu-item-desc">110 حبات</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">250</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">هرم دونات</span>
+              <span class="menu-item-desc">40 حبة</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">160</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">هرم شوكولاتة توت</span>
+              <span class="menu-item-desc">250 حبة</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">380</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ز. الشوكولاتة -->
+      <article class="menu-card">
+        <div class="menu-card-header">
+          <h3 class="menu-card-title">🍫 الشوكولاتة</h3>
+        </div>
+        <ul class="menu-items-list">
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">شوكولاتة بلجيكية بنكهات متعددة</span>
+              <span class="menu-item-desc">مغلّف أو مكشوف (الكيلو)</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">170</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">كرانشي</span>
+              <span class="menu-item-desc">الكيلو</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">160</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">روكي رود</span>
+              <span class="menu-item-desc">الكيلو</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">150</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">طباعة لوقو أو قالب</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">30</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ح. بكجات الضيافة -->
+      <article class="menu-card">
+        <div class="menu-card-header">
+          <h3 class="menu-card-title">🎁 بكجات الضيافة</h3>
+        </div>
+        <ul class="menu-items-list">
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">بكج ضيافة 1 (~50 شخصاً)</span>
+              <span class="menu-item-desc">هرمان مادلين أو ماكرون + صينيتا شوكولاتة 3 كيلو + لوقوان بثيم المناسبة</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">950</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">بكج ضيافة 2 (~100 شخص)</span>
+              <span class="menu-item-desc">هرمان مادلين أو ماكرون + 4 صواني شوكولاتة 6 كيلو + 4 لوقو بثيم المناسبة</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">1450</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- ط. الإهداء والورد -->
+      <article class="menu-card">
+        <div class="menu-card-header">
+          <h3 class="menu-card-title">🌸 الإهداء والورد</h3>
+        </div>
+        <ul class="menu-items-list">
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">بوكس كوب كيك شفاف</span>
+              <span class="menu-item-desc">ورد + بالونا هيليوم</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">99</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">بوكس كوب سيراميك</span>
+              <span class="menu-item-desc">ورد + بالونا هيليوم</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">115</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">بوكس كيك 4 إنش</span>
+              <span class="menu-item-desc">كرت إهداء + ورد + بالونا هيليوم</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">149</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">بوكس أرتا للإهداء 6 إنش</span>
+              <span class="menu-item-desc">ورد + شرار + كرت + بالونا هيليوم</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">265</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">بوكس أكريليك 6 إنش</span>
+              <span class="menu-item-desc">كرت + ورد + بالونا هيليوم</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">275</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">بالون هيليوم</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">7</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">بالون هيليوم جنس الجنين</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">55</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+        </ul>
+        <div class="flower-action-box">
+          <a href="https://wa.me/966590059848?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%F0%9F%8C%B8%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AA%D9%86%D8%B3%D9%8A%D9%82%20%D9%88%D8%B1%D8%AF%20%D9%88%D9%87%D8%AF%D8%A7%D9%8A%D8%A7" class="wa-flower-btn track-wa-click" target="_blank" rel="noopener noreferrer">
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.05 7.42C8.86 7.42 8.56 7.49 8.3 7.78C8.04 8.07 7.31 8.76 7.31 10.17C7.31 11.58 8.34 12.94 8.48 13.13C8.63 13.32 10.45 16.12 13.24 17.32C13.9 17.61 14.42 17.78 14.82 17.91C15.48 18.12 16.09 18.09 16.56 18.02C17.09 17.94 18.18 17.36 18.41 16.71C18.64 16.07 18.64 15.52 18.57 15.4C18.5 15.29 18.31 15.22 18.03 15.08C17.74 14.94 16.34 14.25 16.08 14.15C15.82 14.06 15.63 14.01 15.44 14.3C15.25 14.59 14.71 15.22 14.55 15.4C14.39 15.59 14.23 15.61 13.94 15.47C13.66 15.33 12.74 15.03 11.64 14.05C10.79 13.29 10.21 12.35 10.05 12.07C9.88 11.78 10.03 11.63 10.18 11.49C10.31 11.36 10.46 11.16 10.61 10.99C10.75 10.82 10.8 10.69 10.89 10.51C10.99 10.32 10.94 10.16 10.87 10.02C10.8 9.88 10.23 8.48 10 7.92C9.77 7.37 9.54 7.45 9.37 7.44C9.21 7.43 9.05 7.42 9.05 7.42Z"/>
+            </svg>
+            <span>استفسري عن الورد والهدايا عبر واتساب</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ي. الإضافات -->
+      <article class="menu-card">
+        <div class="menu-card-header">
+          <h3 class="menu-card-title">✨ الإضافات</h3>
+        </div>
+        <ul class="menu-items-list">
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">رسم</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">30</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">شرارات</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">20</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">شموع</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">15</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">قبعة تخرج</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">20</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">ورد صناعي</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">20</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">نجوم الليل</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">18</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">طباعة صورة</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">30</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">لون تغطية الكيك بالكامل</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">15</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">ورد طبيعي حسب الكمية</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">35</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">تغريسات تفصيل حسب الطلب</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">50</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">فلين كيك وهمي / بوكس أكريليك</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">150</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">ورق ويفر أو أرز</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">10</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">كتابة بعجينة السكر</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">10</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-details">
+              <span class="menu-item-name">مجسمات عجينة سكر</span>
+            </div>
+            <div class="menu-item-price-box">
+              <span class="menu-item-price-val">35</span>
+              <span class="menu-item-price-unit">ريال</span>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- سطر الضريبة والإضافات تحت المنيو -->
+      <p class="menu-note">الأسعار تشمل ضريبة القيمة المضافة ولا تشمل الإضافات · عدد الأشخاص تقديري ويعتمد على حجم التقطيع</p>
+    </main>
+
+    <!-- 5. قسم مهم قبل الطلب -->
+    <section class="notice-card" aria-label="مهم قبل الطلب">
+      <div class="notice-header">
+        <span style="font-size: 1.1rem;">⚠️</span>
+        <h2 class="notice-title">مهم قبل الطلب</h2>
+      </div>
+      <ul class="notice-list">
+        <li class="notice-item">التنفيذ خلال 2–7 أيام ويُفضَّل الحجز قبل أسبوع من المناسبة.</li>
+        <li class="notice-item">لا يُنفَّذ تصميم طبق الأصل لتصميم مُرسَل — التنفيذ حسب المتوفر مع الحفاظ على الفكرة والألوان.</li>
+        <li class="notice-item">يتم تأكيد الطلب بعد التحويل فقط.</li>
+        <li class="notice-item">لا يمكن التعديل أو الإلغاء قبل 48 ساعة من موعد الاستلام أو بعد بدء التنفيذ، وعند الإلغاء يُسترجع المبلغ خلال 3 أيام عمل.</li>
+        <li class="notice-item">يرجى حفظ المنتجات مبردة، والمحل غير مسؤول عن أي ضرر بعد الاستلام.</li>
+        <li class="notice-item">مسببات الحساسية: جلوتين، بيض، حليب ومشتقاته، مكسرات، صويا.</li>
+      </ul>
+    </section>
+
+    <!-- 6. قسم الموقع -->
+    <section class="location-card" aria-label="موقع الفرع">
+      <div class="location-header">
+        <span style="font-size: 1.1rem;">📍</span>
+        <h2 class="location-title">موقع الفرع</h2>
+      </div>
+      <p class="location-address">فرع العليا — دحية ابن خليفة الكلبي، حي العليا، تبوك</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B1%D8%AA%D8%A7+%D9%83%D9%8A%D9%83+%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7+%D8%AA%D8%A8%D9%88%D9%83" class="maps-btn" target="_blank" rel="noopener noreferrer">
+        <svg class="maps-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        <span>فتح الموقع في خرائط Google</span>
+      </a>
+    </section>
+
+    <!-- 7. قسم التوصيل الفوري -->
+    <section class="location-card" aria-label="التوصيل الفوري">
+      <div class="location-header">
+        <span style="font-size: 1.1rem;">🛵</span>
+        <h2 class="location-title">التوصيل الفوري</h2>
+      </div>
+      <p class="location-address">توصيل فوري داخل تبوك مع مناديب أرتا</p>
+      <a href="tel:0558041404" class="maps-btn">
+        <span>📞 0558041404</span>
+      </a>
+      <a href="tel:0510722180" class="maps-btn">
+        <span>📞 0510722180</span>
+      </a>
+      <a href="tel:0578181332" class="maps-btn">
+        <span>📞 0578181332</span>
+      </a>
+    </section>
+
+    <!-- 8. تذييل صغير -->
+    <footer class="footer">
+      <p>أرتا كيك © 2026</p>
+    </footer>
+
+  </div>
+
+  <!-- 9. شريط سفلي لاصق -->
+  <aside class="sticky-bar" aria-label="طلب سريع">
+    <div class="sticky-bar-inner">
+      <a href="https://wa.me/966593600306?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%AA%D8%A7%20%D9%83%D9%8A%D9%83%20%F0%9F%8C%B8%20%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%3A%0A%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%3A%0A%D8%A7%D9%84%D9%86%D9%83%D9%87%D8%A9%3A%0A%D8%A7%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85%3A%0A%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A8%D8%A9%3A%0A%D8%A7%D9%84%D9%8A%D9%88%D9%85%20%D9%88%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%20%D9%88%D8%A7%D9%84%D9%88%D9%82%D8%AA%3A%0A%D8%A7%D8%B3%D8%AA%D9%84%D8%A7%D9%85%20%D8%A3%D9%88%20%D8%AA%D9%88%D8%B5%D9%8A%D9%84%3A%0A%D8%A7%D9%84%D8%A7%D8%B3%D9%85%3A%0A%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D8%AC%D9%88%D8%A7%D9%84%3A" class="wa-sticky-btn track-wa-click" target="_blank" rel="noopener noreferrer">
+        <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.05 7.42C8.86 7.42 8.56 7.49 8.3 7.78C8.04 8.07 7.31 8.76 7.31 10.17C7.31 11.58 8.34 12.94 8.48 13.13C8.63 13.32 10.45 16.12 13.24 17.32C13.9 17.61 14.42 17.78 14.82 17.91C15.48 18.12 16.09 18.09 16.56 18.02C17.09 17.94 18.18 17.36 18.41 16.71C18.64 16.07 18.64 15.52 18.57 15.4C18.5 15.29 18.31 15.22 18.03 15.08C17.74 14.94 16.34 14.25 16.08 14.15C15.82 14.06 15.63 14.01 15.44 14.3C15.25 14.59 14.71 15.22 14.55 15.4C14.39 15.59 14.23 15.61 13.94 15.47C13.66 15.33 12.74 15.03 11.64 14.05C10.79 13.29 10.21 12.35 10.05 12.07C9.88 11.78 10.03 11.63 10.18 11.49C10.31 11.36 10.46 11.16 10.61 10.99C10.75 10.82 10.8 10.69 10.89 10.51C10.99 10.32 10.94 10.16 10.87 10.02C10.8 9.88 10.23 8.48 10 7.92C9.77 7.37 9.54 7.45 9.37 7.44C9.21 7.43 9.05 7.42 9.05 7.42Z"/>
+        </svg>
+        <span>اطلبي عبر واتساب</span>
+      </a>
+    </div>
+  </aside>
+
+  <script>
+    // خطوة تتبع مشتركة واحدة لجميع أزرار واتساب
+    function handleWhatsAppClick() {
+      try {
+        if (typeof window.ttq === 'object' && typeof window.ttq.track === 'function') {
+          window.ttq.track('Contact', { content_name: 'بدء محادثة واتساب' });
+        }
+      } catch (e) {}
+
+      try {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', {
+            event_category: 'WhatsApp',
+            event_label: 'بدء محادثة واتساب'
+          });
+        }
+      } catch (e) {}
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var waButtons = document.querySelectorAll('.track-wa-click');
+      waButtons.forEach(function(btn) {
+        btn.addEventListener('click', handleWhatsAppClick);
+      });
+    });
+  </script>
+</body>
+</html>
