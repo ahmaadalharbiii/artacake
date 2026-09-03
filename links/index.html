@@ -260,7 +260,7 @@
       </a>
 
       <!-- 2. اطلبي الآن -->
-      <a href="/" class="link-btn">
+      <a href="/order/" class="link-btn">
         <span class="btn-icon" aria-hidden="true">🛍️</span>
         <span class="btn-text">اطلبي الآن</span>
       </a>
@@ -328,28 +328,6 @@
     </footer>
   </main>
 
-  <script>
-    // خطوة تتبع مشتركة واحدة لجميع أزرار واتساب
-    function handleWhatsAppClick() {
-      try {
-        if (typeof window.ttq === 'object' && typeof window.ttq.track === 'function') {
-          window.ttq.track('Contact', { content_name: 'بدء محادثة واتساب' });
-        }
-      } catch (e) {}
-
-      try {
-        if (typeof window.gtag === 'function') {
-          window.gtag('event', 'conversion', { send_to: 'AW-18423214890/OJ8ECJf73O0cEKrm79BE' });
-        }
-      } catch (e) {}
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var waButtons = document.querySelectorAll('.track-wa-click');
-      waButtons.forEach(function(btn) {
-        btn.addEventListener('click', handleWhatsAppClick);
-      });
-    });
-  </script>
+  <script src="/assets/site.js"></script>
 </body>
 </html>
