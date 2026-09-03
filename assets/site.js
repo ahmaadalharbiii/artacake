@@ -84,6 +84,11 @@ function renderMenuCards(containerOrId, sectionIds) {
   }
 
   container.innerHTML = html;
+  // الأقسام تُبنى بعد تحميل الصفحة، فالرابط /order/#daily يحتاج تمريراً يدوياً بعد البناء
+  if (window.location.hash) {
+    var target = document.getElementById(window.location.hash.slice(1));
+    if (target) target.scrollIntoView();
+  }
 
   // ربط أحداث التتبع للأزرار المنشأة حديثاً
   var newWaBtns = container.querySelectorAll('.track-wa-click');
