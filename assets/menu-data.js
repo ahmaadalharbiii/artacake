@@ -5,7 +5,7 @@
 const ARTA_MENU = [
   {
     "id": "low-height",
-    "emoji": "🎂",
+    "icon": "cake",
     "title": "كيك المناسبات — ارتفاع منخفض",
     "items": [
       {
@@ -42,7 +42,7 @@ const ARTA_MENU = [
   },
   {
     "id": "high-height",
-    "emoji": "🎂",
+    "icon": "layers",
     "title": "كيك المناسبات — ارتفاع عالي",
     "items": [
       {
@@ -89,7 +89,7 @@ const ARTA_MENU = [
   },
   {
     "id": "rectangular",
-    "emoji": "🍰",
+    "icon": "rect",
     "title": "كيك مستطيل — ارتفاع 6 سم",
     "items": [
       {
@@ -106,7 +106,7 @@ const ARTA_MENU = [
   },
   {
     "id": "flavors",
-    "emoji": "🍦",
+    "icon": "flavor",
     "title": "النكهات",
     "items": [
       {
@@ -125,7 +125,7 @@ const ARTA_MENU = [
   },
   {
     "id": "daily",
-    "emoji": "⭐",
+    "icon": "star",
     "title": "متوفر يومياً لجمعاتكم",
     "subtitle": "جاهزة للاستلام في نفس اليوم",
     "items": [
@@ -170,7 +170,7 @@ const ARTA_MENU = [
   },
   {
     "id": "pyramids",
-    "emoji": "🏛️",
+    "icon": "pyramid",
     "title": "أهرام المناسبات",
     "items": [
       {
@@ -197,7 +197,7 @@ const ARTA_MENU = [
   },
   {
     "id": "chocolate",
-    "emoji": "🍫",
+    "icon": "chocolate",
     "title": "الشوكولاتة",
     "items": [
       {
@@ -223,7 +223,7 @@ const ARTA_MENU = [
   },
   {
     "id": "hospitality",
-    "emoji": "🎁",
+    "icon": "users",
     "title": "بكجات الضيافة",
     "items": [
       {
@@ -240,7 +240,7 @@ const ARTA_MENU = [
   },
   {
     "id": "gifts-flowers",
-    "emoji": "🌸",
+    "icon": "flower",
     "title": "الإهداء والورد",
     "items": [
       {
@@ -280,7 +280,7 @@ const ARTA_MENU = [
   },
   {
     "id": "add-ons",
-    "emoji": "✨",
+    "icon": "sparkles",
     "title": "الإضافات",
     "items": [
       {

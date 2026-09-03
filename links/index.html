@@ -214,6 +214,17 @@
       color: #FFFFFF;
     }
 
+    .icon {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      stroke: currentColor;
+      stroke-width: 0;
+      flex-shrink: 0;
+    }
+
     .icon-svg {
       width: 24px;
       height: 24px;
@@ -247,7 +258,7 @@
       <h1 class="shop-name">أرتا كيك</h1>
       <div class="shop-name-latin">ARTA CAKE</div>
       <div class="tagline-badge">
-        هنا نشارككم لحظاتكم السعيدة ✨ للطلب ٢–٧ أيام 📍 تبوك
+        هنا نشارككم لحظاتكم السعيدة <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-sparkles"></use></svg> للطلب ٢–٧ أيام <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-pin"></use></svg> تبوك
       </div>
     </header>
 
@@ -255,13 +266,17 @@
     <nav class="links-list" aria-label="روابط أرتا كيك">
       <!-- 1. المنيو -->
       <a href="/menu/" class="link-btn">
-        <span class="btn-icon" aria-hidden="true">🎂</span>
+        <span class="btn-icon" aria-hidden="true">
+          <svg class="icon icon-svg" aria-hidden="true"><use href="/assets/icons.svg#i-menu-book"></use></svg>
+        </span>
         <span class="btn-text">المنيو</span>
       </a>
 
       <!-- 2. اطلبي الآن -->
       <a href="/order/" class="link-btn">
-        <span class="btn-icon" aria-hidden="true">🛍️</span>
+        <span class="btn-icon" aria-hidden="true">
+          <svg class="icon icon-svg" aria-hidden="true"><use href="/assets/icons.svg#i-bag"></use></svg>
+        </span>
         <span class="btn-text">اطلبي الآن</span>
       </a>
 
@@ -317,7 +332,9 @@
 
       <!-- 8. موقع فرع العليا -->
       <a href="https://maps.app.goo.gl/5cHXwJTktdTgEfha7" class="link-btn" target="_blank" rel="noopener">
-        <span class="btn-icon" aria-hidden="true">📍</span>
+        <span class="btn-icon" aria-hidden="true">
+          <svg class="icon icon-svg" aria-hidden="true"><use href="/assets/icons.svg#i-pin"></use></svg>
+        </span>
         <span class="btn-text">موقع فرع العليا</span>
       </a>
     </nav>
