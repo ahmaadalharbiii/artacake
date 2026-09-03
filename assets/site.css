@@ -1045,3 +1045,416 @@ body {
 .wa-sticky-btn:hover {
   background-color: var(--wa-green-hover);
 }
+
+/* ==========================================================================
+   7. إضافات المرحلة الثانية (Phase 2 Additions)
+   ========================================================================== */
+
+/* Page Hero الموحّد */
+.page-hero {
+  position: relative;
+  width: 100%;
+  min-height: 260px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background-color: var(--primary-berry);
+}
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(44, 24, 32, 0.9) 0%, rgba(44, 24, 32, 0.52) 50%, rgba(44, 24, 32, 0.22) 100%);
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 36px 20px;
+  color: #FAF7F2;
+}
+
+.page-hero-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #FAF7F2;
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.page-hero-subtitle {
+  font-size: 1.1rem;
+  color: #EADBCE;
+  font-weight: 500;
+}
+
+/* Hero الرئيسية بعمودين */
+.hero-content-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 36px;
+  text-align: right;
+  margin-bottom: 32px;
+}
+
+.hero-text-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-text-col .hero-title {
+  text-align: right;
+  margin-bottom: 12px;
+}
+
+.hero-text-col .hero-subtitle {
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+.hero-text-col .hero-buttons {
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+.hero-media-col {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 32px rgba(112, 26, 57, 0.15);
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-content-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .hero-text-col {
+    align-items: center;
+  }
+
+  .hero-text-col .hero-title,
+  .hero-text-col .hero-subtitle {
+    text-align: center;
+  }
+
+  .hero-text-col .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-media-col {
+    order: -1;
+    width: 100%;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-md);
+  }
+}
+
+/* صور البطاقات وقسم لماذا أرتا */
+.card.card-with-photo {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--border-card);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+/* صور بطاقات استكشفي */
+.explore-photo,
+.explore-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.explore-thumb {
+  overflow: hidden;
+}
+
+.explore-card:hover .explore-photo,
+.explore-card:hover .explore-thumb img {
+  transform: scale(1.05);
+}
+
+/* معرض الصور */
+.gallery-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.gallery-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-sm);
+  background: var(--bg-card);
+}
+
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+  .gallery-grid-2,
+  .gallery-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* شبكة صفحة التواصل */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-card-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--primary-berry);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.contact-item-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-item-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.contact-item-text {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.contact-buttons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-delivery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-delivery-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.contact-delivery-link:hover {
+  background: var(--accent-soft);
+  color: var(--primary-berry);
+  border-color: var(--accent-rose);
+}
+
+.contact-social-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.contact-social-row .social-icon {
+  background: var(--accent-soft);
+  color: var(--primary-berry);
+}
+
+.contact-social-row .social-icon:hover {
+  background: var(--primary-berry);
+  color: #FFFFFF;
+}
+
+.contact-map-frame {
+  width: 100%;
+  height: 320px;
+  border: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: block;
+}
+
+.contact-visit-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.contact-visit-img {
+  width: 100%;
+  max-height: 400px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.contact-visit-body {
+  padding: 20px;
+}
+
+.contact-visit-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--primary-berry);
+  margin-bottom: 6px;
+}
+
+/* قصة من نحن وملاحظاتها */
+.about-story {
+  max-width: 800px;
+  margin: 0 auto 36px auto;
+  text-align: center;
+}
+
+.about-story-p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-story-p:last-child {
+  margin-bottom: 0;
+}
+
+/* بطاقة تنسيق أرتا ورد المميزة */
+.gift-feature-card {
+  background: linear-gradient(135deg, var(--accent-soft) 0%, var(--bg-card) 100%);
+  border: 2px solid var(--accent-rose);
+  border-radius: var(--radius-md);
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.gift-feature-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-berry);
+}
+
+.gift-feature-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* أزرار الدعوة المركزية */
+.center-cta-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
