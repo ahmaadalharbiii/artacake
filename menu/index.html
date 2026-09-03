@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>منيو أرتا كيك | ARTA CAKE</title>
+  <meta name="description" content="منيو أرتا كيك في تبوك — تصفحي تشكيلة كيك المناسبات، الأهرام، الشوكولاتة، بكجات الضيافة، وتنسيقات الورد والهدايا.">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="منيو أرتا كيك | ARTA CAKE">
+  <meta property="og:description" content="منيو أرتا كيك في تبوك — تشكيلة كيك المناسبات والحلويات والضيافة.">
+  <meta property="og:image" content="https://artacake.com/assets/logo.png">
+  <meta property="og:url" content="https://artacake.com/menu/">
+  <meta property="og:type" content="website">
+
 
   <!-- TikTok Pixel Code Start -->
   <script>
@@ -29,6 +39,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/site.css">
 
   <style>
     :root {
@@ -555,6 +567,40 @@
   </style>
 </head>
 <body>
+
+  <!-- الترويسة الموحّدة -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="site-brand">
+        <img src="/assets/logo.png" alt="أرتا كيك" class="site-logo">
+        <span class="site-brand-name">أرتا كيك</span>
+      </a>
+
+      <nav class="site-nav" aria-label="التنقّل الرئيسي">
+        <ul class="site-nav-menu">
+          <li><a href="/" class="site-nav-link">الرئيسية</a></li>
+          <li><a href="/menu/" class="site-nav-link">المنيو</a></li>
+          <li><a href="/order/" class="site-nav-link">اطلبي الآن</a></li>
+          <li><a href="/events/" class="site-nav-link">الضيافة والمناسبات</a></li>
+          <li><a href="/gifts/" class="site-nav-link">الورد والهدايا</a></li>
+          <li><a href="/about/" class="site-nav-link">من نحن</a></li>
+          <li><a href="/contact/" class="site-nav-link">تواصل</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header-actions">
+        <a href="https://wa.me/966593600306?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%AA%D8%A7%20%D9%83%D9%8A%D9%83%20%F0%9F%8C%B8%20%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%3A%0A%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%3A%0A%D8%A7%D9%84%D9%86%D9%83%D9%87%D8%A9%3A%0A%D8%A7%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85%3A%0A%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A8%D8%A9%3A%0A%D8%A7%D9%84%D9%8A%D9%88%D9%85%20%D9%88%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%20%D9%88%D8%A7%D9%84%D9%88%D9%82%D8%AA%3A%0A%D8%A7%D8%B3%D8%AA%D9%84%D8%A7%D9%85%20%D8%A3%D9%88%20%D8%AA%D9%88%D8%B5%D9%8A%D9%84%3A%0A%D8%A7%D9%84%D8%A7%D8%B3%D9%85%3A%0A%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D8%AC%D9%88%D8%A7%D9%84%3A" class="site-header-wa btn-wa track-wa-click" target="_blank" rel="noopener noreferrer">
+          <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.05 7.42C8.86 7.42 8.56 7.49 8.3 7.78C8.04 8.07 7.31 8.76 7.31 10.17C7.31 11.58 8.34 12.94 8.48 13.13C8.63 13.32 10.45 16.12 13.24 17.32C13.9 17.61 14.42 17.78 14.82 17.91C15.48 18.12 16.09 18.09 16.56 18.02C17.09 17.94 18.18 17.36 18.41 16.71C18.64 16.07 18.64 15.52 18.57 15.4C18.5 15.29 18.31 15.22 18.03 15.08C17.74 14.94 16.34 14.25 16.08 14.15C15.82 14.06 15.63 14.01 15.44 14.3C15.25 14.59 14.71 15.22 14.55 15.4C14.39 15.59 14.23 15.61 13.94 15.47C13.66 15.33 12.74 15.03 11.64 14.05C10.79 13.29 10.21 12.35 10.05 12.07C9.88 11.78 10.03 11.63 10.18 11.49C10.31 11.36 10.46 11.16 10.61 10.99C10.75 10.82 10.8 10.69 10.89 10.51C10.99 10.32 10.94 10.16 10.87 10.02C10.8 9.88 10.23 8.48 10 7.92C9.77 7.37 9.54 7.45 9.37 7.44C9.21 7.43 9.05 7.42 9.05 7.42Z"/>
+          </svg>
+          <span>اطلبي الآن</span>
+        </a>
+        <button class="site-nav-toggle" aria-label="فتح القائمة" aria-expanded="false">
+          <span class="nav-toggle-icon">☰</span>
+        </button>
+      </div>
+    </div>
+  </header>
 
   <div class="page-wrapper">
 
@@ -1093,6 +1139,71 @@
 
   </div>
 
+  <!-- التذييل الموحّد -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-col footer-col-brand">
+        <div class="footer-brand">
+          <img src="/assets/logo.png" alt="أرتا كيك" class="footer-logo">
+          <span class="footer-brand-name">أرتا كيك</span>
+        </div>
+        <p class="footer-tagline">مناسبتك كاملة من مكان واحد — كيك وورد وضيافة، بمكوّنات طبيعية</p>
+      </div>
+
+      <div class="footer-col footer-col-links">
+        <h3 class="footer-heading">روابط الموقع</h3>
+        <ul class="footer-nav">
+          <li><a href="/">الرئيسية</a></li>
+          <li><a href="/menu/">المنيو</a></li>
+          <li><a href="/order/">اطلبي الآن</a></li>
+          <li><a href="/events/">الضيافة والمناسبات</a></li>
+          <li><a href="/gifts/">الورد والهدايا</a></li>
+          <li><a href="/about/">من نحن</a></li>
+          <li><a href="/contact/">تواصل</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-contact">
+        <h3 class="footer-heading">تواصل معنا</h3>
+        <ul class="footer-contact-list">
+          <li>
+            <a href="https://wa.me/966593600306" class="footer-contact-link track-wa-click" target="_blank" rel="noopener noreferrer">
+              <span>💬 واتساب الطلبات: 0593600306</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/966590059848" class="footer-contact-link track-wa-click" target="_blank" rel="noopener noreferrer">
+              <span>🌸 واتساب الورد: 0590059848</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:0558041404" class="footer-contact-link">
+              <span>🛵 التوصيل: 0558041404</span>
+            </a>
+          </li>
+          <li class="footer-info-text">📍 فرع العليا، تبوك</li>
+          <li class="footer-info-text">🕐 نداوم يومياً ٣م–١١م</li>
+        </ul>
+
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/Arta__Cake" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="إنستقرام">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@arta__cake" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="تيك توك">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.76 1.44-.03 2.73-.97 3.16-2.35.21-.59.27-1.22.27-1.85V.02h-.03z"/></svg>
+          </a>
+          <a href="https://www.snapchat.com/add/Artacake" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="سناب شات">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.21 2c-3.5 0-5.89 2.65-5.89 5.92 0 .84.22 2.07.51 2.86.11.29.07.48-.18.65-.51.35-1.06.73-1.58 1.16-.34.28-.49.6-.45 1.02.05.61.5 1 1.07 1.13 1.13.26 2.21.15 3.32-.22.29-.1.46-.03.58.25.51 1.21 1.35 1.67 2.64 1.67 1.29 0 2.13-.46 2.64-1.67.12-.28.29-.35.58-.25 1.11.37 2.19.48 3.32.22.57-.13 1.02-.52 1.07-1.13.04-.42-.11-.74-.45-1.02-.52-.43-1.07-.81-1.58-1.16-.25-.17-.29-.36-.18-.65.29-.79.51-2.02.51-2.86C18.1 4.65 15.71 2 12.21 2zM5.72 18.23c-.74.23-1.44.5-1.99.9-.6.44-.87 1.05-.73 1.76.15.73.75 1.15 1.62 1.15 1.25 0 2.44-.44 3.65-.83.84-.27 1.67-.41 2.52-.41.85 0 1.68.14 2.52.41 1.21.39 2.4.83 3.65.83.87 0 1.47-.42 1.62-1.15.14-.71-.13-1.32-.73-1.76-.55-.4-1.25-.67-1.99-.9-.53-.16-1.06-.3-1.6-.42-.34-.08-.54-.27-.46-.61.08-.31.3-.43.61-.36.77.17 1.54.38 2.29.61.91.29 1.74.68 2.32 1.37.68.8.7 1.77.06 2.6-.67.86-1.69 1.23-2.78 1.23-1.37 0-2.67-.47-3.97-.89-.67-.22-1.36-.33-2.04-.33-.68 0-1.37.11-2.04.33-1.3.42-2.6.89-3.97.89-1.09 0-2.11-.37-2.78-1.23-.64-.83-.62-1.8.06-2.6.58-.69 1.41-1.08 2.32-1.37.75-.23 1.52-.44 2.29-.61.31-.07.53.05.61.36.08.34-.12.53-.46.61-.54.12-1.07.26-1.6.42z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>أرتا كيك © 2026 · artacake.com</p>
+    </div>
+  </footer>
+
   <!-- زر عائم ثابت للواتساب -->
   <a href="https://wa.me/966593600306?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%AA%D8%A7%20%D9%83%D9%8A%D9%83%20%F0%9F%8C%B8%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D9%86%D9%8A%D9%88" class="floating-wa-btn track-wa-click" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا عبر واتساب">
     <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -1100,28 +1211,6 @@
     </svg>
   </a>
 
-  <script>
-    // خطوة تتبع مشتركة واحدة لجميع أزرار واتساب
-    function handleWhatsAppClick() {
-      try {
-        if (typeof window.ttq === 'object' && typeof window.ttq.track === 'function') {
-          window.ttq.track('Contact', { content_name: 'بدء محادثة واتساب' });
-        }
-      } catch (e) {}
-
-      try {
-        if (typeof window.gtag === 'function') {
-          window.gtag('event', 'conversion', { send_to: 'AW-18423214890/OJ8ECJf73O0cEKrm79BE' });
-        }
-      } catch (e) {}
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var waButtons = document.querySelectorAll('.track-wa-click');
-      waButtons.forEach(function(btn) {
-        btn.addEventListener('click', handleWhatsAppClick);
-      });
-    });
-  </script>
+  <script src="/assets/site.js"></script>
 </body>
 </html>
