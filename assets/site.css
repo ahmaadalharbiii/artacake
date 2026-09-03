@@ -51,6 +51,53 @@ body {
 }
 
 /* ==========================================================================
+   الأيقونات الموحّدة (Unified SVG Icons)
+   ========================================================================== */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 0;
+  flex-shrink: 0;
+}
+
+/* أحجام مسمّاة للسياقات */
+.icon-chip {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.2em;
+}
+
+.icon-card {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.icon-title,
+.icon-section-title,
+.icon-menu-title {
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: -0.2em;
+}
+
+.icon-btn {
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: -0.2em;
+}
+
+.icon-nav {
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
    1. الترويسة الموحّدة (Unified Site Header)
    ========================================================================== */
 .site-header {
@@ -470,6 +517,14 @@ body {
   font-size: 2rem;
   margin-bottom: 12px;
   display: inline-block;
+  color: var(--primary-berry);
+}
+
+.card-icon svg,
+svg.card-icon {
+  width: 1em;
+  height: 1em;
+  display: block;
 }
 
 .card-title {

@@ -35,15 +35,16 @@ function renderMenuCards(containerOrId, sectionIds) {
   var html = '';
   sections.forEach(function(section) {
     var sectionIdAttr = section.id ? ' id="' + section.id + '"' : '';
+    var iconHtml = section.icon ? '<svg class="icon icon-menu-title" aria-hidden="true"><use href="/assets/icons.svg#i-' + section.icon + '"></use></svg> ' : '';
     html += '<article class="menu-card"' + sectionIdAttr + '>';
     html += '<div class="menu-card-header">';
     if (section.subtitle) {
       html += '<div>';
-      html += '<h3 class="menu-card-title">' + (section.emoji ? section.emoji + ' ' : '') + section.title + '</h3>';
+      html += '<h3 class="menu-card-title">' + iconHtml + section.title + '</h3>';
       html += '<span class="menu-card-subtitle">' + section.subtitle + '</span>';
       html += '</div>';
     } else {
-      html += '<h3 class="menu-card-title">' + (section.emoji ? section.emoji + ' ' : '') + section.title + '</h3>';
+      html += '<h3 class="menu-card-title">' + iconHtml + section.title + '</h3>';
     }
     html += '</div>';
 
@@ -100,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
     btn.addEventListener('click', handleWhatsAppClick);
   });
 
-  // 2. قائمة الجوال ☰
+  // 2. قائمة الجوال
   var toggleBtn = document.querySelector('.site-nav-toggle');
   var navMenu = document.querySelector('.site-nav-menu');
 
