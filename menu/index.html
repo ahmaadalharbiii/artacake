@@ -565,6 +565,20 @@
       width: 34px;
       height: 34px;
     }
+
+    .floating-wa-btn:focus-visible {
+      outline: 2px solid var(--primary-berry);
+      outline-offset: 2px;
+      box-shadow: 0 0 0 2px var(--bg-cream);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .coord-wa-link:hover,
+      .floating-wa-btn:hover,
+      .floating-wa-btn:active {
+        transform: none;
+      }
+    }
   </style>
 </head>
 <body>
