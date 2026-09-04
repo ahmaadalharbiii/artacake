@@ -247,6 +247,29 @@
       width: 100%;
       margin-top: auto;
     }
+
+    /* 4. إمكانية الوصول وتقليل الحركة */
+    a:focus-visible {
+      outline: 2px solid var(--primary-berry);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .link-btn:hover,
+      .link-btn:active,
+      .link-btn-wa:hover,
+      .link-btn-wa:active {
+        transform: none;
+      }
+    }
   </style>
 </head>
 <body>
