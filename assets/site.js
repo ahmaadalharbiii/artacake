@@ -14,6 +14,7 @@ function handleWhatsAppClick() {
   try {
     if (typeof window.gtag === 'function') {
       window.gtag('event', 'conversion', { send_to: 'AW-18423214890/OJ8ECJf73O0cEKrm79BE' });
+      window.gtag('event', 'whatsapp_click', { send_to: 'G-7SE7Q16HK9' });
     }
   } catch (e) {}
 }
