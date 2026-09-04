@@ -1513,3 +1513,43 @@ svg.card-icon {
   margin-top: 32px;
 }
 
+/* ==========================================================================
+   8. إمكانية الوصول وتقليل الحركة (Accessibility & Reduced Motion)
+   ========================================================================== */
+
+/* حلقة التركيز للوحة المفاتيح */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--primary-berry);
+  outline-offset: 3px;
+}
+
+/* حلقة التركيز داخل التذييل ذي الخلفية الداكنة */
+.site-footer a:focus-visible,
+.site-footer button:focus-visible,
+.site-footer [tabindex]:focus-visible {
+  outline-color: var(--bg-cream);
+}
+
+/* تقليل الحركة عند تفعيل تفضيل النظام */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .social-icon:hover,
+  .btn-wa:hover,
+  .btn-berry:hover,
+  .btn-outline:hover,
+  .explore-card:hover,
+  .explore-card:hover .explore-photo,
+  .explore-card:hover .explore-thumb img,
+  .gallery-item:hover .gallery-img {
+    transform: none;
+  }
+}
